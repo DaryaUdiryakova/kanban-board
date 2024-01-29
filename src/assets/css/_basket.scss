@@ -1,0 +1,8 @@
+.task-basket {
+  margin-top: 20px;
+
+  .button-delete {
+    @include button-base ($bg-button-delete);
+    width: 100%;
+  }
+}

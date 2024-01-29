@@ -1,0 +1,23 @@
+@mixin button-base($color) {
+  border-color: $color;
+  background  : $color;
+  padding     : 10px 20px;
+  color       : #fff;
+  font-size   : 15px;
+  border-style: solid none;
+
+  &:hover {
+    background  : darken($color, 6%);
+    border-color: darken($color, 6%);
+  }
+
+  &:disabled {
+    background  : lighten($color, 10%);
+    border-color: lighten($color, 10%);
+  }
+}
+
+@mixin input-style($height, $padding) {
+  height : $height;
+  padding: $padding;
+}

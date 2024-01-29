@@ -1,0 +1,65 @@
+body {
+  margin : 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding    : 0 20px;
+  font-family: 'Open Sans', sans-serif;
+
+  .container {
+    padding        : 20px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : flex-start;
+    gap            : 30px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  button {
+    cursor         : pointer;
+    text-decoration: none;
+    outline        : none;
+    border-radius  : 6px;
+    transition     : 0.2s;
+
+    &:disabled {
+      cursor: default;
+    }
+  }
+
+  input {
+    flex         : 4 4 0;
+    border-radius: 6px;
+    border-style : solid;
+    border-width : 1px;
+    border-color : grey;
+
+    &:focus {
+      outline     : none;
+      border-image: none;
+      border-color: $bg-button-add;
+      border-style: solid;
+      border-width: 1px;
+    }
+  }
+
+  header {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .wrapper {
+    padding: 0 10px;
+
+    .container {
+      padding: 20px 10px;
+      gap    : 20px;
+    }
+  }
+}

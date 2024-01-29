@@ -1,0 +1,77 @@
+.list-bg-backlog {
+  background: $bg-backlog;
+}
+
+.list-bg-progress {
+  background: $bg-progress;
+}
+
+.list-bg-basket {
+  background: $bg-basket;
+}
+
+.list-bg-done {
+  background: $bg-done;
+}
+
+.list {
+  min-height   : 109px;
+  min-width    : 220px;
+  border-radius: 5px;
+  box-shadow   : 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  padding      : 20px 20px 30px 20px;
+  flex         : 1 1 0;
+
+  h3 {
+    text-align: center;
+  }
+
+  .list__group {
+    min-height    : 48px;
+    margin-top    : 30px;
+    display       : flex;
+    gap           : 10px;
+    flex-direction: column;
+  }
+
+  .list-zero {
+    border-style : dashed;
+    border-radius: 5px;
+    border-color : #ccc;
+    background   : transparentize(#ccc, 0.8);
+  }
+
+  .list__item {
+    background     : #fff;
+    padding        : 10px 15px;
+    gap            : 10px;
+    min-height     : 30px;
+    border-radius  : 5px;
+    cursor         : pointer;
+    box-shadow     : 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+    &:hover {
+      .icon-actions {
+        opacity: 1;
+      }
+    }
+
+    input {
+      @include input-style(26px, 0 5px);
+    }
+  }
+
+  .icon-actions {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1030px) {
+  .list {
+    min-width: 200px;
+    padding  : 10px 10px 20px 10px;
+  }
+}
