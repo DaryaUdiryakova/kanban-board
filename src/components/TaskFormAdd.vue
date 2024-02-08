@@ -13,6 +13,7 @@ export default {
   },
 };
 </script>
+
 <template>
   <div class="form-add">
     <h3>New Task</h3>

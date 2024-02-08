@@ -1,14 +1,10 @@
 # kanban-board
 
-This template should help get you started developing with Vue 3 in Vite.
+<h2><a href="https://daryaudiryakova.github.io/kanban-board/">Live Demo</a></h2>
 
-## Recommended IDE Setup
+## Description
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+A drag-and-drop kanban board where you can manage cards (create, edit, delete).
 
 ## Project Setup
 

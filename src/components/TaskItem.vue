@@ -20,6 +20,7 @@ export default {
     edit() {
       this.isEdit = true;
     },
+
     removeOne() {
       this.$emit("removeOne", this.id);
     },
@@ -33,8 +34,8 @@ export default {
   },
 };
 </script>
-<template>
 
+<template>
   <div class="list__item">
     <template v-if="!isEdit">
       {{ name }}
@@ -77,5 +78,4 @@ export default {
       </button>
     </template>
   </div>
-
 </template>

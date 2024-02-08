@@ -1,10 +1,10 @@
 <script>
-let idTask = 6;
 import draggable from "vuedraggable";
 import TaskItem from "@/components/TaskItem.vue";
 import TaskFormAdd from "@/components/TaskFormAdd.vue";
 import TaskBasket from "@/components/TaskBasket.vue";
 
+let idTask = 6;
 export default {
   components: {
     draggable,
@@ -53,7 +53,7 @@ export default {
   methods: {
     addTask(title) {
       idTask++;
-      this.board[0].tasks.push({ idTask, name: title });
+      this.board[0].tasks.push({ id: idTask, name: title });
     },
 
     remove() {
@@ -91,7 +91,6 @@ export default {
 </script>
 
 <template>
-
   <div class="wrapper">
     <header>
       <div class="container">
@@ -134,5 +133,4 @@ export default {
       </div>
     </main>
   </div>
-
 </template>
